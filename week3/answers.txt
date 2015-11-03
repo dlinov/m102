@@ -1,0 +1,4 @@
+1. 6
+2. 12
+3. Q1: 4, Q2: 4, Q3: Yes
+4. Data compression, Document level locking
