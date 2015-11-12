@@ -1,0 +1,5 @@
+1. 7
+2. Add an arbiter, Add another data bearing node
+3. db.m102.insert([{"a":1},{"b":2},{"c":3}])
+4. None of the above
+5. {"force" : true}
