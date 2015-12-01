@@ -1,0 +1,10 @@
+1. 6
+2. #2 (The MongoDB primary does not write to its data files until a majority acknowledgement comes back from the rest of the cluster. When 27003 was primary, it did not perform the last 3 writes.)
+3. #3 (It contains 3 documents.)
+4. 233
+5. #1 (We can create an index to make the following query fast/faster: db.postings.find( { "comments.flagged" : true } )) and #3 (One way to assure people vote at most once per posting is to use this form of update: db.postings.update( { _id: . . . , voters:{$ne:'joe'} }, { $inc : {votes:1}, $push : {voters:'joe'} } );)
+6. #2 (MongoDB has a data type for binary data.) and #3 (MongoDB supports atomic operations on individual documents.)
+7. #2 (MongoDB supports reads from slaves/secondaries that are in remote locations.)
+8. 39:15
+9. 47664
+10. 2 shards are queried; 8 documents are examined
